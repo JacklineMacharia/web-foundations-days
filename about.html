@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup Test</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+        </nav>
+        <h1>QuickNotes</h1>
+        <p>Capture ideas before they disapper.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>About QuickNotes</h2>
+            <p>How to use the QuickNote website.</p>
+        </section>
+
+        <section>
+            <ol>
+                <li>Type the Note you want to add.</li>
+                <li>Save the note with the button.</li>
+                <li>Confirm the note if is displaying after saving. The note should display below.</li>
+            </ol>
+        </section>
+
+        <section>
+            <ul>
+                <li>Add a note.</li>
+                <li>Edit or delete a note.</li>
+                <li>Contact us for more queries.</li>                
+            </ul>
+        </section>
+
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                    <th>Shortcut</th>
+                    <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>Enter</td>
+                    <td>Add the note</td>
+                    </tr>
+                    <tr>
+                    <td>Ctrl + S</td>
+                    <td>Save the file in VS Code</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <form id="note-form">
+                <label for="name-input">Name</label>
+                <input
+                    type="text"
+                    id="name-input"
+                    name="name"
+                    placeholder="What is your name?"
+                    required
+                />
+                <label for="email-input">Email</label>
+                <input
+                    type="email"
+                    id="email-input"
+                    name="email"
+                    placeholder="What is your email?"
+                    required
+                />
+                <label for="message-to-send">Message</label>
+                <textarea type="charset" id="message-to-send" placeholder="Enter your message or queries here..."></textarea>
+                <button type="submit">Add Note</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 QuickNotes. Built during Web Foundations.</p>
+    </footer>
+    
+</body>
+</html>
