@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: whitesmoke;
+    --text: #111;
+    --border: #795656;
+    --input-bg: #fff;
+}
+
+body.dark {
+    --bg: #161616;
+    --text: #f5f5f5;
+    --border: #aaa;
+    --input-bg: #232323;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Times New Roman', Times, serif;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+  
+
+main {
+    max-width: 640px;
+    margin: 24px auto;
+    padding: 0 16px;
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 32rem;
+}
+
+.dom-logo {
+    font-size: 2.4rem;
+    font-weight: bolder;
+}
+
+@media (max-width: 640px) {
+    .dom-logo {
+        margin-left: 28px;
+        font-size: 1.8rem;
+    }
+
+    .theme-toggle-btn {
+        margin-right: 28px;
+    }
+}
+
+.theme-toggle-btn {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 6px;
+    background-color: #b6b6da;
+    border-style: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: font-weight 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+
+.theme-toggle-btn:hover {
+    font-weight: bolder;
+    background-color: #646494;
+    transform: translateY(0.2s)
+}
+
+.my-message {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.message-label {
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.text-area-input {
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 1rem;
+    overflow-wrap: break-word;
+    background-color: var(--input-bg);
+    color: var(--text);
+}
+.char-count-p {
+    font-size: 1rem;
+}
+
+.clear-text-btn {
+    align-items: center;
+    padding: 8px;
+    background-color: #7575da;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-left: 18rem;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+
+}
+
+.clear-text-btn:hover{
+    background-color: #2b2b86;
+    transform: translateX(0.2s);
+
+}
+
+.warning {
+    color: #ff9800;
+}
+
+.over {
+    color: #d32f2f;
+    font-weight: bold;
+}
+

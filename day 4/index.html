@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 id="logo" class="dom-logo">DOM</h1>
+        <nav>
+            <button id="theme-toggle" class="theme-toggle-btn">Light</button>
+        </nav>
+    </header>
+    <main>
+        <section class="my-message">
+        <label for="message" class="message-label">Message:</label>
+        <textarea rows="5" cols="30" wrap="soft" id="note-text" class="text-area-input" placeholder="Type something..."></textarea>
+        </section>
+        <section>
+            <p id="char-count" class="char-count-p">0 / 200 characters</p>
+            <p id="word-count" class="char-count-p">0 words</p>
+        </section>
+        <button id="clear-btn" class="clear-text-btn">Clear Note</button>
+    </main>
+    
+</body>
+</html>
